@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Define x range where the expression under the square root is non-negative
-x = np.linspace(-1, 43, 400)
+x = np.linspace(-1, 3, 400)
 under_sqrt = 2 * x - x**2
 
 # Valid domain where y^2 = 2x - x^2 is non-negative
