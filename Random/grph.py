@@ -14,7 +14,7 @@ y_valid = np.sqrt(under_sqrt[valid])
 plt.figure(figsize=(6, 6))
 plt.plot(x_valid, y_valid, label='Positive root')
 plt.plot(x_valid, -y_valid, label='Negative root')
-PythonFinalizationError
+
 plt.title(r'Graph of $y^2 + x^2 = 2x$')
 plt.xlabel('x')
 plt.ylabel('y')
