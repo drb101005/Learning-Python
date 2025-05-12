@@ -6,7 +6,7 @@ from colorama import init, Fore, Style
 # Initialize colorama
 init(autoreset=True)
 
-def loading_effect(text="Loading", dots=3, delay=0.3):
+def loading_effect(text="Loading", dots=3, delay=1.3):
     for i in range(dots):
         print(f"{text}{'.' * (i+1)}", end="\r")
         time.sleep(delay)
