@@ -25,6 +25,7 @@ def get_time_of_day():
 
 def get_random_compliment():
     compliments = [
+        "You're the Best!!"
         "You're doing great! 🚀",
         "You have a brilliant mind! 🧠",
         "Keep up the good work! 💪",
