@@ -39,10 +39,10 @@ def get_dimension(name):
 
 def main():
     print("Enter box dimensions:")
-    l = get_dimension("Length")
+    length = get_dimension("Length")
     w = get_dimension("Width")
     h = get_dimension("Height")
-    box = Box(l, w, h)
+    box = Box(length, w, h)
     print("\nResult:")
     print(box)
 
