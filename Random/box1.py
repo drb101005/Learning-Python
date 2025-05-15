@@ -19,4 +19,27 @@ class Box:
         return self.length == self.width == self.height
 
     def __str__(self):
-        box_type = "Cube" if_
+        box_type = "Cube" if self.is_cube() else "Rectangular Box"
+        return (f"{box_type}:\n"
+                f"  Dimensions: {self.length} × {self.width} × {self.height}\n"
+                f"  Volume: {self.volume()}\n"
+                f"  Surface Area: {self.surface_area()}")
+
+
+def main():
+    try:
+        print("Enter the dimensions of the box:")
+        l = float(input("Length: "))
+        w = float(input("Width: "))
+        h = float(input("Height: "))
+
+        box = Box(l, w, h)
+        print("\nBox Information:")
+        print(box)
+
+    except ValueError as ve:
+        print(f"Error: {ve}")
+
+
+if __name__ == "__main__":
+    main()
