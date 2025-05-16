@@ -15,6 +15,7 @@ sea_life = {
     6000: "🕳️ You've reached the abyssal zone. Only the toughest survive here.",
 }
 
+
 def dive_simulation():
     depth = 0
     max_depth = 7000
