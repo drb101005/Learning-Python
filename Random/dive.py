@@ -3,7 +3,8 @@ import random
 
 # Sea creatures and depths
 sea_life = {
-    10: "🦀 You see a crab scuttling over the sand.",
+    0: "Nothing here",
+    50: "🦀 You see a crab scuttling over the sand.",
     30: "🐠 A school of colorful fish swims by.",
     50: "🐙 An octopus blends into a rock.",
     100: "🦑 A squid jets past you in a hurry.",
