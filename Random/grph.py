@@ -17,6 +17,7 @@ plt.plot(x_valid, -y_valid, label='Negative root')
 
 
 
+
 plt.title(r'Graph of $y^2 + x^2 = 2x$')
 plt.xlabel('x')
 plt.ylabel('y')
