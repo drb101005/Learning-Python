@@ -17,7 +17,7 @@ sea_life = {
 def dive_simulation():
     depth = 0
     max_depth = 7000
-    step = 50
+    step = 500
 
     print("🌊 Starting your deep-sea dive...")
     time.sleep(1)
