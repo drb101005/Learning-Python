@@ -4,12 +4,12 @@ import random
 # Sea creatures and depths
 sea_life = {
     0: "Nothing here",
-    50: "🦀 You see a crab scuttling over the sand.",
-    30: "🐠 A school of colorful fish swims by.",
-    50: "🐙 An octopus blends into a rock.",
-    100: "🦑 A squid jets past you in a hurry.",
-    200: "🦈 A shark cruises silently nearby.",
-    500: "🐋 A massive whale sings in the distance.",
+    100: "🦀 You see a crab scuttling over the sand.",
+    200: "🐠 A school of colorful fish swims by.",
+    300: "🐙 An octopus blends into a rock.",
+    400: "🦑 A squid jets past you in a hurry.",
+    500: "🦈 A shark cruises silently nearby.",
+    700: "🐋 A massive whale sings in the distance.",
     1000: "🌌 It's nearly pitch black. Bioluminescent jellyfish glow eerily.",
     3000: "🧠 You encounter the mysterious deep-sea gulper eel.",
     6000: "🕳️ You've reached the abyssal zone. Only the toughest survive here.",
@@ -18,7 +18,7 @@ sea_life = {
 def dive_simulation():
     depth = 0
     max_depth = 7000
-    step = 500
+    step = 100
 
     print("🌊 Starting your deep-sea dive...")
     time.sleep(1)
