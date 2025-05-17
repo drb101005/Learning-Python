@@ -42,6 +42,7 @@ def main():
     print(f"\n{greeting}, {name}!")
     print(compliment)
 
+
 # Run the program
 if __name__ == "__main__":
     main()
