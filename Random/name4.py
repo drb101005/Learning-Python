@@ -23,6 +23,7 @@ def get_time_of_day():
     else:
         return "🌙 Hello night owl"
 
+
 def get_random_compliment():
     compliments = [
         "You're the Best!!"
