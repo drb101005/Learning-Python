@@ -28,6 +28,7 @@ def print_fancy_cross(size=11, char='✝', border_char='█'):
     # Bottom border
     print(border_char * (size + 2))
 
+
 # Example usage
 if __name__ == "__main__":
     try:
