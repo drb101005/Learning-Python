@@ -15,6 +15,7 @@ def print_cross(size):
             else:
                 print(' ', end='')
         print()
+        
 
 # Example usage
 try:
