@@ -4,8 +4,8 @@ import turtle
 pen = turtle.Turtle()
 
 # Set pen color and size
-pen.color("blue")
-pen.pensize(3)
+pen.color("red")
+pen.pensize(5)
 
 # Draw a square
 for _ in range(4):
