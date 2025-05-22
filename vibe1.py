@@ -25,7 +25,7 @@ def get_vibe():
     return random.choice(vibes)
 
 def vibe_check():
-    print(Style.__sizeof__ + "🌈 Welcome to the Ultimate Vibe Checker 🌈")
+    print(Style.BRIGHT + "🌈 Welcome to the Ultimate Vibe Checker 🌈")
     name = input("What's your name, vibe-seeker? ")
 
     print(f"\nAlright {name}, sensing your current vibe", end="")
