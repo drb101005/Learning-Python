@@ -8,7 +8,7 @@ init(autoreset=True)
 def animated_dots():
     for _ in range(3):
         print(".", end="", flush=True)
-        time.sleep(0.5)
+        time.sleep(1.5)
     print()
 
 def get_vibe():
