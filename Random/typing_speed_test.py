@@ -1,10 +1,11 @@
 import time
+import colorama
 
 def typing_speed_test():
     # Sentence to type
-    test_sentence = ""
+    test_sentence = "The quick brown fox jumps over the lazy dog."
     print("Typing Speed Test")
-    print("------------------")
+    print("-.-.-.-.-.-.-.-.-.-")
     print("Type the following sentence as fast and accurately as you can:\n")
     print(f'"{test_sentence}"\n')
     input("Press Enter when you are ready to start...")
