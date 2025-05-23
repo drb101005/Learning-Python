@@ -29,8 +29,9 @@ def typing_speed_test():
     else:
         print("\nOops! There were some mistakes in your typing.")
 
-    print(f"Time taken: {time_taken:.2f} seconds")
-    print(f"Your typing speed is: {typing_speed:.2f} words per minute")
+colour , tt
+tt = print(f"Time taken: {time_taken:.2f} seconds")
+print(f"Your typing speed is: {typing_speed:.2f} words per minute")
 
 # Run the test
 typing_speed_test()
