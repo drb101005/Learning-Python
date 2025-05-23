@@ -28,9 +28,10 @@ def typing_speed_test():
         print("\nGreat job! You typed it correctly.")
     else:
         print("\nOops! There were some mistakes in your typing.")
+        ts_true = ("This wont count in")
 
     print(f"Time taken: {time_taken:.2f} seconds")
-    print(f"Your typing speed is: {typing_speed:.2f} words per minute")
+    print(f"Your typing speed is: {ts_true} words per minute")
 
 # Run the test
 typing_speed_test()
