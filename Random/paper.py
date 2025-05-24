@@ -1,14 +1,16 @@
+# Simple Notepad Simulation - "Paper" Theme
+
 def show_menu():
     print("\n--- Digital Paper Notepad ---")
     print("1. Write a new note")
     print("2. View saved notes")
     print("3. Exit")
-def note()
-    def write_note():
+
+def write_note():
     note = input("Write your note here: ")
-with open("notes.txt", "a") as file:
+    with open("notes.txt", "a") as file:
         file.write(note + "\n")
-        print("Note saved successfully!")
+    print("Note saved successfully!")
 
 def view_notes():
     print("\n--- Your Notes ---")
@@ -40,5 +42,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
