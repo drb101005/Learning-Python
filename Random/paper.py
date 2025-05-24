@@ -23,3 +23,22 @@ def view_notes():
     except FileNotFoundError:
         print("No notes file found. Start writing your first note!")
 
+def main():
+    while True:
+        show_menu()
+        choice = input("Choose an option (1-3): ")
+
+        if choice == '1':
+            write_note()
+        elif choice == '2':
+            view_notes()
+        elif choice == '3':
+            print("Goodbye! Your notes are saved on digital paper.")
+            break
+        else:
+            print("Invalid choice. Please try again.")
+
+if __name__ == "__main__":
+    main()
+
+
