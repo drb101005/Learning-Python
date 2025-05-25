@@ -11,6 +11,20 @@ def get_float_input(prompt):
         except ValueError:
             print("Invalid input. Please enter a number.")
 
+def print_cos_values():
+    print("Cos value Genrator")
+
+    print("\n{:<12} {:<12}".format("Angle (°)", "Sin(angle)"))
+    print("-" * 25)
+
+    angle = 0.0
+    while angle <= max_degree + 1e-6:  # Avoid float rounding issues
+        rad = math.radians(angle)
+        sin_val = math.sin(rad)
+        print("{:<12.2f} {:<12.4f}".format(angle, sin_val))
+        angle += interval
+
+
 def print_sin_values():
     print("📐 Sine Value Table Generator")
 
@@ -30,3 +44,4 @@ def print_sin_values():
 # Run the function
 if __name__ == "__main__":
     print_sin_values()
+    print_cos_values
