@@ -4,7 +4,7 @@ def print_sin_values():
     # Ask user for the maximum degree to calculate sine for
     try:
         max_degree = int(input("Enter the maximum angle in degrees (e.g., 180): "))
-        interval = int(input("Enter the interval step size in degrees (e.g., 15): "))
+        interval = float(input("Enter the interval step size in degrees (e.g., 15): "))
 
         if max_degree < 0 or interval <= 0:
             print("Please enter positive values for degrees and interval.")
