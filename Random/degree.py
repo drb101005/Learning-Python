@@ -16,6 +16,9 @@ def get_float_input(prompt):
 def print_sin_values():
     print("📐 Sine Value Table Generator")
 
+    print("\n{:<12} {:<12}".format("Angle (°)", "Cos(angle)"))
+    print("-" * 25)
+
     max_degree = get_float_input("Enter the maximum angle in degrees (e.g., 180): ")
     interval = get_float_input("Enter the interval step size in degrees (e.g., 15): ")
 
@@ -34,14 +37,17 @@ def print_sin_values():
 def print_cos_values():
     print("Cos value Genrator")
 
-    print("\n{:<12} {:<12}".format("Angle (°)", "Sin(angle)"))
+    print("\n{:<12} {:<12}".format("Angle (°)", "Cos(angle)"))
     print("-" * 25)
+max_degree = get_float_input("Enter the maximum angle in degrees (e.g., 180): ")
+interval = get_float_input("Enter the interval step size in degrees (e.g., 15): ")
 
-    angle = 0.0
-    while angle <= max_degree + 1e-6:  # Avoid float rounding issues
+
+angle = 0.0
+while angle <= max_degree + 1e-6:  # Avoid float rounding issues
         rad = math.radians(angle)
-        sin_val = math.sin(rad)
-        print("{:<12.2f} {:<12.4f}".format(angle, sin_val))
+        cos_val = math.cos(rad)
+        print("{:<12.2f} {:<12.4f}".format(angle, cos_val))
         angle += interval
 
 # Run the function
