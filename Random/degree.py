@@ -11,8 +11,13 @@ def get_float_input(prompt):
         except ValueError:
             print("Invalid input. Please enter a number.")
 
-def print_cos_values():
-    print("Cos value Genrator")
+
+
+def print_sin_values():
+    print("📐 Sine Value Table Generator")
+
+    max_degree = get_float_input("Enter the maximum angle in degrees (e.g., 180): ")
+    interval = get_float_input("Enter the interval step size in degrees (e.g., 15): ")
 
     print("\n{:<12} {:<12}".format("Angle (°)", "Sin(angle)"))
     print("-" * 25)
@@ -25,11 +30,9 @@ def print_cos_values():
         angle += interval
 
 
-def print_sin_values():
-    print("📐 Sine Value Table Generator")
 
-    max_degree = get_float_input("Enter the maximum angle in degrees (e.g., 180): ")
-    interval = get_float_input("Enter the interval step size in degrees (e.g., 15): ")
+def print_cos_values():
+    print("Cos value Genrator")
 
     print("\n{:<12} {:<12}".format("Angle (°)", "Sin(angle)"))
     print("-" * 25)
