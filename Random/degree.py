@@ -1,24 +1,32 @@
 import math
 
+def get_float_input(prompt):
+    while True:
+        try:
+            value = float(input(prompt))
+            if value <= 0:
+                print("Please enter a number greater than zero.")
+            else:
+                return value
+        except ValueError:
+            print("Invalid input. Please enter a number.")
+
 def print_sin_values():
-    # Ask user for the maximum degree to calculate sine for
-    try:
-        max_degree = int(input("Enter the maximum angle in degrees (e.g., 180): "))
-        interval = float(input("Enter the interval step size in degrees (e.g., 15): "))
+    print("📐 Sine Value Table Generator")
 
-        if max_degree < 0 or interval <= 0:
-            print("Please enter positive values for degrees and interval.")
-            return
+    max_degree = get_float_input("Enter the maximum angle in degrees (e.g., 180): ")
+    interval = get_float_input("Enter the interval step size in degrees (e.g., 15): ")
 
-        print("\nAngle (°)\tSin(angle)")
-        print("-" * 25)
+    print("\n{:<12} {:<12}".format("Angle (°)", "Sin(angle)"))
+    print("-" * 25)
 
-        for angle in range(0, max_degree + 1, interval):
-            rad = math.radians(angle)  # Convert degrees to radians
-            sin_val = math.sin(rad)
-            print(f"{angle:>8}°\t{sin_val:.4f}")
-    except ValueError:
-        print("Please enter valid integers for degrees and interval.")
+    angle = 0.0
+    while angle <= max_degree + 1e-6:  # Avoid float rounding issues
+        rad = math.radians(angle)
+        sin_val = math.sin(rad)
+        print("{:<12.2f} {:<12.4f}".format(angle, sin_val))
+        angle += interval
 
 # Run the function
-print_sin_values()
+if __name__ == "__main__":
+    print_sin_values()
