@@ -11,6 +11,8 @@ def get_float_input(prompt):
         except ValueError:
             print("Invalid input. Please enter a number.")
 
+            
+
 def print_sin_values():
     print("\n📐 Sine Value Table Generator")
     max_degree = get_float_input("Enter the maximum angle in degrees (e.g., 180): ")
