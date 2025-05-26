@@ -11,6 +11,7 @@ def get_float_input(prompt):
         except ValueError:
             print("Invalid input. Please enter a number.")
 
+
             
 
 def print_sin_values():
