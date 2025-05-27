@@ -42,22 +42,28 @@ def print_cos_values():
         print("{:<12.2f} {:<12.4f}".format(angle, cos_val))
         angle += interval
 
-
 def print_tan_values():
-    print("\n🧮 Tangent Value Table Generator")
+    print("\n📐 Tangent Value Table Generator")
     max_degree = get_float_input("Enter the maximum angle in degrees (e.g., 180): ")
     interval = get_float_input("Enter the interval step size in degrees (e.g., 15): ")
 
-    print("\n{:<12} {:<12}".format("Angle (°)", "Cos(angle)"))
+    print("\n{:<12} {:<12}".format("Angle (°)", "Tan(angle)"))
     print("-" * 25)
 
     angle = 0.0
     while angle <= max_degree + 1e-6:
         rad = math.radians(angle)
-        tan_val = math.cos(rad)
-        print("{:<12.2f} {:<12.4f}".format(angle, tan_val))
+        try:
+            tan_val = math.tan(rad)
+            # Avoid printing excessively large values for undefined tangent (like at 90°)
+            if abs(tan_val) > 1e6:
+                tan_str = "undefined"
+            else:
+                tan_str = "{:<12.4f}".format(tan_val)
+        except:
+            tan_str = "undefined"
+        print("{:<12.2f} {}".format(angle, tan_str))
         angle += interval
-
 # Run the functions
 if __name__ == "__main__":
     print_sin_values()
