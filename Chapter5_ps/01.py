@@ -1,29 +1,19 @@
-# English to Hindi Dictionary Program
+'''We Going to make a Dictionary(for Eng to Hindi)!!!'''
 
-# Define the dictionary
 eng_to_hindi = {
-    "hello": "नमस्ते",
-    "world": "दुनिया",
-    "apple": "सेब",
-    "book": "किताब",
-    "computer": "कंप्यूटर",
-    "water": "पानी",
-    "food": "भोजन",
-    "friend": "मित्र",
-    "love": "प्यार",
-    "mother": "माँ"
+    "Hello" : "Namaste",
+    "Bye" : "Alvaida",
+    "Mother" : "Maaaaaa",
+    "Father" : "Papaaa",
+    "Tommrow" : "Kal",
+    "Later" : "Badme"
 }
 
-print("We Going to make a Dictionary (for Eng to Hindi)!!!")
-print("Type 'exit' to quit the program.\n")
+word = input("Enter the word(Hello,Bye,Mother,Father,Tommrow,Later): ")
 
-while True:
-    word = input("Enter an English word: ").strip().lower()
-    
-    if word == "exit":
-        print("Exiting the dictionary. धन्यवाद!")
-        break
-    elif word in eng_to_hindi:
-        print(f"The Hindi translation of '{word}' is: {eng_to_hindi[word]}\n")
-    else:
-        print(f"Sorry, '{word}' is not in the dictionary.\n")
+if(word in eng_to_hindi):
+
+    print(f"The translation of the {word} in hindi is {eng_to_hindi[word]}")
+else:
+    print("Error, Word is not in the list Pal")
+
