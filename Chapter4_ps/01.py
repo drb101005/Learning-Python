@@ -1,0 +1,1 @@
+fruit1 = input("Enter the name of the first fruit")
