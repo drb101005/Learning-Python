@@ -14,7 +14,7 @@ import platform
 from typing import Optional
 
 class VoiceAutomationSystem:
-    def __init__(self):
+    def __init__(self): 
         # Initialize speech recognition
         self.recognizer = sr.Recognizer()
         self.microphone = sr.Microphone()
@@ -387,7 +387,7 @@ class VoiceAutomationSystem:
                     "VoiceAutomation", 
                     0, 
                     winreg.REG_SZ, 
-                    f'"{sys.executable}" "{os.path.abspath(__file__)}"'
+                    f'"{system.executable}" "{os.path.abspath(__file__)}"'
                 )
                 winreg.CloseKey(key)
             elif platform.system() == "Darwin":
