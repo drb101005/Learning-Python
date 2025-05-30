@@ -87,4 +87,34 @@ def main():
     }
 
     while True:
-        print("\n📱 PHONE CONTACT MANAGER
+        print("\n📱 PHONE CONTACT MANAGER 📱")
+        for key, value in menu_options.items():
+            print(f"{key}. {value}")
+
+        choice = input("Choose an option (1-5): ").strip()
+
+        if choice == '1':
+            name = input("Enter name: ").strip()
+            phone = get_valid_phone()
+            phonebook.add_contact(name, phone)
+
+        elif choice == '2':
+            phonebook.view_contacts()
+
+        elif choice == '3':
+            name = input("Enter name to search: ").strip()
+            phonebook.search_contact(name)
+
+        elif choice == '4':
+            name = input("Enter name to delete: ").strip()
+            phonebook.delete_contact(name)
+
+        elif choice == '5':
+            print("👋 Exiting Phone Contact Manager.")
+            break
+
+        else:
+            print("⚠️ Invalid choice. Enter a number between 1 and 5.")
+
+if __name__ == "__main__":
+    main()
