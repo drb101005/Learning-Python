@@ -28,6 +28,13 @@ class PhoneBook:
             except (json.JSONDecodeError, KeyError):
                 print("⚠️ Failed to load contacts. File may be corrupted.")
         return {}
+    
+
+
+
+
+
+    
 
     def save_contacts(self) -> None:
         """Save contacts to a JSON file."""
