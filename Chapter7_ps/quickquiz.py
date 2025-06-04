@@ -1,4 +1,3 @@
-i = int(input("Enter a number: "))
-while i < 50:
-    i += 1
+start = int(input("Enter a number: "))
+for i in range(start + 1, 51):
     print(i)
