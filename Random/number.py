@@ -36,6 +36,7 @@ def main():
             print("Please enter a valid positive integer.")
             continue
         num = int(num_input)
+
         if choice == '1':
             print(f"{num} is {'a Prime' if is_prime(num) else 'not a Prime'} number.")
         elif choice == '2':
