@@ -36,3 +36,17 @@ def main():
             print("Please enter a valid positive integer.")
             continue
         num = int(num_input)
+        if choice == '1':
+            print(f"{num} is {'a Prime' if is_prime(num) else 'not a Prime'} number.")
+        elif choice == '2':
+            print(f"{num} is {'Even' if num % 2 == 0 else 'Odd'}.")
+        elif choice == '3':
+            result = factorial(num)
+            print(f"Factorial of {num} is {result}")
+        elif choice == '4':
+            print(f"Sequence up to {num}: {number_sequence(num)}")
+        else:
+            print("Invalid choice. Please choose between 1 and 5.")
+
+if __name__ == "__main__":
+    main()
