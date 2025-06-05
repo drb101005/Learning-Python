@@ -15,3 +15,24 @@ def factorial(n):
 
 def number_sequence(n):
     return list(range(1, n + 1))
+
+def main():
+    while True:
+        print("\n--- Number Utility Tool ---")
+        print("1. Check if number is Prime")
+        print("2. Check if number is Even or Odd")
+        print("3. Calculate Factorial")
+        print("4. Generate Sequence up to N")
+        print("5. Exit")
+
+        choice = input("Choose an option (1-5): ").strip()
+
+        if choice == '5':
+            print("Goodbye!")
+            break
+
+        num_input = input("Enter a number: ")
+        if not num_input.isdigit():
+            print("Please enter a valid positive integer.")
+            continue
+        num = int(num_input)
