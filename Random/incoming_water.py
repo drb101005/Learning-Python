@@ -13,3 +13,8 @@ print("Monitoring Incoming Water...\n")
 while water_level < DANGER_LEVEL:
     increase = random.uniform(0.5, 1.5)  # Simulate rising water
     water_level += round(increase, 2)
+        print(f"Current water level: {water_level} meters")
+
+    if water_level >= SAFE_LEVEL and water_level < DANGER_LEVEL:
+        print("⚠️ Warning: Water level is getting high!")
+    
