@@ -9,4 +9,3 @@ f = factiorial(n)
 
 print(f)
 
- 5 : 15
