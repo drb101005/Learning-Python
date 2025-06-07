@@ -1,7 +1,7 @@
-def goodday(name, ending):
-    print("Good Day, " + name + ending)
+def goodday(name):
+    print("Good Day, " + name)
 
 
-goodday("Dhruv", " Thank you ")
-goodday("Durva"," Thank you")
-goodday("Daksh"," Thank you")
+goodday("Dhruv")
+goodday("Durva")
+goodday("Daksh")
