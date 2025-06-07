@@ -4,7 +4,8 @@ def converter():
     cel = int(input("Enter the degree is Celsius : "))
     far = 0
     far = (cel * 1.8) + 32
-    print(far)
+    print(far , end=" ")
+    print("Is the degree...")
     return 0
 
 #converter()
