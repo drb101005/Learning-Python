@@ -6,6 +6,9 @@ Scissors = 3
 '''
 import random
 
+user_times = int(input("Enter the number of times you want to play : "))
+temp = 0
+
 user_choice = int(input("Enter your choice (1, 2, 3): "))
 
 computer = random.choice([1, 2, 3])
@@ -27,4 +30,6 @@ def game():
         else:
             print("You win!!")   # Scissors vs Paper
 
-game()
+while(temp<user_times):
+    game()
+    temp = temp + 1
