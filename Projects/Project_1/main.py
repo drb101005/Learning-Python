@@ -6,15 +6,15 @@ Scissors = 3
 '''
 import random
 
-from colorama import Style
+from colorama import Fore, Style, init
 
-user_times = int(input("Enter the number of times you want to play : "))
+user_times = int(input(Style.BRIGHT + Fore.BLUE + "Enter the number of times you want to play : "))
 temp = 1
 
 
 
 def game():
-    user_choice = int(input("Enter your choice (1, 2, 3): "))
+    user_choice = int(input(Style.BRIGHT + Fore.RED + "Enter your choice (1, 2, 3)Rock = 1, Paper = 2 ,Scissors = 3: "))
 
     computer = random.choice([1, 2, 3])
 
