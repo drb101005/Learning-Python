@@ -6,6 +6,8 @@ Scissors = 3
 '''
 import random
 
+from colorama import Style
+
 user_times = int(input("Enter the number of times you want to play : "))
 temp = 1
 
