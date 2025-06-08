@@ -7,15 +7,19 @@ Scissors = 3
 import random
 
 user_times = int(input("Enter the number of times you want to play : "))
-temp = 0
+temp = 1
 
-user_choice = int(input("Enter your choice (1, 2, 3): "))
 
-computer = random.choice([1, 2, 3])
 
 def game():
+    user_choice = int(input("Enter your choice (1, 2, 3): "))
+
+    computer = random.choice([1, 2, 3])
+
     if user_choice == computer:
         print("Draw!!")
+    elif(user_choice>3):
+        print("Not in option!!")
     else:
         if user_choice == 1 and computer == 2:
             print("You lose!!")  # Rock vs Paper
@@ -30,6 +34,6 @@ def game():
         else:
             print("You win!!")   # Scissors vs Paper
 
-while(temp<user_times):
+while(temp<=user_times):
     game()
     temp = temp + 1
