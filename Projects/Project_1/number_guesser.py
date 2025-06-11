@@ -25,3 +25,6 @@ while True:
        
         print(Style.BRIGHT + Fore.RED + f"It took you {i} times...")
         break
+
+# ask the user if there are multiplayers
+#add difficulties
