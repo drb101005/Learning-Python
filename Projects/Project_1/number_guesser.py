@@ -10,6 +10,8 @@ diffucult_level = int(input("Enter the level of difficulty from level 1,2,3 :"))
 # The plan is to ask user What difficulty he  wants ,in number make 3 types first 0-5 then O to 9, then 0 to 15 
 # add an impossible difficulty where the numbers are from 0 to 9 but after every wrong guess the choice of number changes
 
+####Due to the current code syntax , each part has its own while command to run it ,but that has been. changed but I have a feeling theat there is some  mistake in it
+
 def game1():
 
     guess = int(input(Style.BRIGHT + Fore.MAGENTA + "Enter your guess (from 0 to 5) : "))
