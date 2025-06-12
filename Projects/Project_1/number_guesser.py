@@ -76,5 +76,30 @@ while difficulty_level = 3:
         break
 
 
+def impossible():
+
+    guess = int(input(Style.BRIGHT + Fore.MAGENTA + "Enter your guess (from 0 to 9) : "))
+    if(guess < number):
+        print("Low!")
+#gotta put the random number choosing thingies here
+      
+    elif(number < guess):
+        print("High!")
+        
+    else:
+        print(Style.BRIGHT + Fore.BLUE + "You guessed the number right!!")
+        
+        return 0
+
+while difficulty_level = 1:
+    i = i + 1
+    if game() == 0:
+       
+        print(Style.BRIGHT + Fore.RED + f"It took you {i} times...")
+        break
+
+
+
 # ask the user if there are multiplayers
 #add difficulties
+# add a little rules and welcome msg ,in that add animations to the welcome msg with colours and fading and all...
