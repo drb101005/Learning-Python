@@ -3,11 +3,14 @@
 import random
 from colorama import Fore, Style, init
 i = 0
-number = random.choice([1,2,3,4,5,6,7,8,9])
-
+number1 = random.choice[(0,1,2,3,4,5)]
+number2 = random.choice([0,1,2,3,4,5,6,7,8,9])
+number3 = rancomd.choice[(0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15)]
+# The plan is to ask user What difficulty he  wants ,in number make 3 types first 0-5 then O to 9, then 0 to 15 
+# add an impossible difficulty where the numbers are from 0 to 9 but after every wrong guess the choice of number changes
 def game():
 
-    guess = int(input(Style.BRIGHT + Fore.MAGENTA + "Enter your guess (from 1 to 9) : "))
+    guess = int(input(Style.BRIGHT + Fore.MAGENTA + "Enter your guess (from 0 to 9) : "))
     if(guess < number):
         print("Low!")
       
