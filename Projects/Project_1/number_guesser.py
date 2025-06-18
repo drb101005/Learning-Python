@@ -5,8 +5,8 @@ from colorama import Fore, Style, init
 i = 0
 number1 = random.choice[(0,1,2,3,4,5)]
 number2 = random.choice([0,1,2,3,4,5,6,7,8,9])
-number3 = rancomd.choice[(0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15)]
-diffucult_level = int(input("Enter the level of difficulty from level 1,2,3 :"))
+number3 = random.choice[(0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15)]
+ = int(input("Enter the level of difficulty from level 1,2,3 :"))
 # The plan is to ask user What difficulty he  wants ,in number make 3 types first 0-5 then O to 9, then 0 to 15 
 # add an impossible difficulty where the numbers are from 0 to 9 but after every wrong guess the choice of number changes
 
@@ -15,10 +15,10 @@ diffucult_level = int(input("Enter the level of difficulty from level 1,2,3 :"))
 def game1():
 
     guess = int(input(Style.BRIGHT + Fore.MAGENTA + "Enter your guess (from 0 to 5) : "))
-    if(guess < number):
+    if(guess < number1):
         print("Low!")
       
-    elif(number < guess):
+    elif(number1 < guess):
         print("High!")
         
     else:
@@ -26,9 +26,9 @@ def game1():
         
         return 0
 
-while difficulty_level = 1:
+while diffucult_level = 1:
     i = i + 1
-    if game() == 0:
+    if game1() == 0:
        
         print(Style.BRIGHT + Fore.RED + f"It took you {i} times...")
         break
@@ -38,10 +38,10 @@ while difficulty_level = 1:
 def game2():
 
     guess = int(input(Style.BRIGHT + Fore.MAGENTA + "Enter your guess (from 0 to 9) : "))
-    if(guess < number):
+    if(guess < number2):
         print("Low!")
       
-    elif(number < guess):
+    elif(number2 < guess):
         print("High!")
         
     else:
@@ -49,7 +49,7 @@ def game2():
         
         return 0
 
-while difficulty_level = 2:
+while diffucult_level = 2:
     i = i + 1
     if game() == 0:
        
@@ -59,10 +59,10 @@ while difficulty_level = 2:
 def game3():
 
     guess = int(input(Style.BRIGHT + Fore.MAGENTA + "Enter your guess (from 0 to 15) : "))
-    if(guess < number):
+    if(guess < number3):
         print("Low!")
       
-    elif(number < guess):
+    elif(number3 < guess):
         print("High!")
         
     else:
@@ -70,7 +70,7 @@ def game3():
         
         return 0
 
-while difficulty_level = 3:
+while diffucult_level = 3:
     i = i + 1
     if game() == 0:
        
@@ -93,9 +93,9 @@ def impossible():
         
         return 0
 
-while difficulty_level = 1:
+while diffucult_level = 1:
     i = i + 1
-    if game() == 0:
+    if impossible() == 0:
        
         print(Style.BRIGHT + Fore.RED + f"It took you {i} times...")
         break
