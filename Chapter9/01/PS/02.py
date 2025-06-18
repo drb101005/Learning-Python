@@ -1,0 +1,1 @@
+#Write a game function ,where the score is returned as an int and its stored in a file
