@@ -5,7 +5,7 @@
 
 try:
     # Using 'with' statement ensures the file is properly closed after use
-    with open("file.txt", "r") as file:
+    with open("Chapter9/01/file.txt", "r") as file:
         # Read and process file contents here
         contents = file.read()
         print("File contents:")
