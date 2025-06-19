@@ -5,4 +5,4 @@ class Employee:
 dhruv = Employee()
 dhruv.language = "JavaScript" # This is an instance attribute
 print(dhruv.language, dhruv.salary)
- 
+  
