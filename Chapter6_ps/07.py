@@ -1,7 +1,6 @@
-post = input("Enter the post: ")
+post = input("Enter your post: ")
 
-if("harry" in post.lower()):
-    print("This post is talking about harry")
-
+if("Dhruv".lower() in post.lower()):
+    print("Post is talking about Dhruv")
 else:
-    print("This post is not talking about harry")
+    print("Post is not about you")

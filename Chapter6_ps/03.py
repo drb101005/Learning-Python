@@ -1,12 +1,15 @@
-p1 = "Make a lot of money"
-p2 = "buy now"  
-p3 = "subscribe this"  
-p4 = "click this"
+#A spam comment is defined as a text containing following keywords:
+# "Make a lot of money" , "buy now" , "subscribe this" , "click this".
+# write a program to detect these spams.
 
-message = input("Enter your comment: ")
+a = "make a lot of monney"
+b = "buy now"
+c = "subscrive this"
+d = "click this"
 
-if((p1 in message) or (p2 in message )or (p3 in message) or (p4 in message)):
-    print("This comment is a spam")
+msg = input("Enter your message : ")
 
+if(a in msg or b in msg or c in msg or d in msg):
+    print("This message is a spam")
 else:
-    print("This comment is not a spam")
+    print("Not a spam message")
