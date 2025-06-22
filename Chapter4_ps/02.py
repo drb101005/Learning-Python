@@ -1,18 +1,23 @@
-marks = []
+Marks = []
 
-f1 = int(input("Enter Marks here: "))
-marks.append(f1)
-f2 = int(input("Enter Marks here: "))
-marks.append(f2)
-f3 = int(input("Enter Marks here: "))
-marks.append(f3)
-f4 = int(input("Enter Marks here: "))
-marks.append(f4)
-f5 = int(input("Enter Marks here: "))
-marks.append(f5)
-f6 = int(input("Enter Marks here: "))
-marks.append(f6)
+M1 = int(input("Enter Your Marks: "))
+Marks.append(M1)
 
-marks.sort()
+M2 = int(input("Enter Your Marks: "))
+Marks.append(M2)
 
-print(marks)
+M3 = int(input("Enter Your Marks: "))
+Marks.append(M3)
+
+M4 = int(input("Enter Your Marks: "))
+Marks.append(M4)
+
+M5 = int(input("Enter Your Marks: "))
+Marks.append(M5)
+
+M6 = int(input("Enter Your Marks: "))
+Marks.append(M6)
+
+Marks.sort()
+
+print(Marks)
