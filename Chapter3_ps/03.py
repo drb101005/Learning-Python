@@ -1,5 +1,9 @@
-# A code to find index of a charecter 
+name = "Hello Lads what  is up 4"
 
-name = "Dave is a Good Guy! "
+print(name.find("w"))
 
-print(name.find("G"))
+print(name.find("  "))
+
+print(name.find("z"))
+
+print(name.find("4"))

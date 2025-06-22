@@ -1,6 +1,3 @@
-# A code to find index of a charecter 
+name = "Hello Lads what 2 is up 4"
 
-name = "Dave is a Good Guy! "
-
-print(name.replace("G","C"))
-
+print(name.replace(" 2 "," "))
