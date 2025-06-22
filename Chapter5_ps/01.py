@@ -1,19 +1,11 @@
-'''We Going to make a Dictionary(for Eng to Hindi)!!!'''
+#Hindi to English
 
-eng_to_hindi = {
-    "Hello" : "Namaste",
-    "Bye" : "Alvaida",
-    "Mother" : "Maaaaaa",
-    "Father" : "Papaaa",
-    "Tommrow" : "Kal",
-    "Later" : "Badme"
+words = {
+    "madat" : "Help",
+    "Billi": "Cat",
+    "pani" : "water"
 }
 
-word = input("Enter the word(Hello,Bye,Mother,Father,Tommrow,Later): ")
+word = input("Enter the word that you want to find the meaning of: ")
 
-if(word in eng_to_hindi):
-
-    print(f"The translation of the {word} in hindi is {eng_to_hindi[word]}")
-else:
-    print("Error, Word is not in the list Pal")
-
+print(words[word])
