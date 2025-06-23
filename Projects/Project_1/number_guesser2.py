@@ -15,7 +15,7 @@ for char in welcome_msg:
 print("\n")
 
 
-print(Fore.YELLOW + Style.BRIGHT + "Levels:\n1. Easy (0-5)\n2. Medium (0-9)\n3. Hard (0-15)\n4. Impossible (0-9 with changing number)\n")
+print(Fore.YELLOW + Style.BRIGHT + "Levels:\n1. Easy (0-5)\n2. Medium (0-9)\n3. Hard (0-15)\n4. Impossible (0-99 with changing number)\n")
 time.sleep(0.05)
 
 difficulty_level = int(input(Fore.GREEN + "Enter the level of difficulty from 1, 2, 3, or 4: "))
@@ -55,8 +55,8 @@ def game3():
         return 0
 
 def impossible():
-    number = random.randint(0, 9)
-    guess = int(input(Style.BRIGHT + Fore.MAGENTA + "Enter your guess (from 0 to 9): "))
+    number = random.randint(0, 99)
+    guess = int(input(Style.BRIGHT + Fore.MAGENTA + "Enter your guess (from 0 to 99): "))
     if guess < number:
         print("Low!")
     elif number < guess:
@@ -92,3 +92,5 @@ elif difficulty_level == 4:
         if impossible() == 0:
             print(Style.BRIGHT + Fore.RED + f"It took you {i} times...")
             break
+else:
+    print("You have given an Invalid number!!!! , please give the number from 1 to 4 for difficulty...")
