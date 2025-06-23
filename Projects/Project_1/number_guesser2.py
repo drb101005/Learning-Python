@@ -14,7 +14,7 @@ for char in welcome_msg:
     time.sleep(0.05)
 print("\n")
 
-# Fixed this line
+
 print(Fore.YELLOW + Style.BRIGHT + "Levels:\n1. Easy (0-5)\n2. Medium (0-9)\n3. Hard (0-15)\n4. Impossible (0-9 with changing number)\n")
 time.sleep(0.05)
 
