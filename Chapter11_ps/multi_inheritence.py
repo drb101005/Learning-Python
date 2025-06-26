@@ -13,8 +13,6 @@ class C:
 # class D(A, B, C):
 #     pass
 
-
-
 class D(A, B, C):
     def method(self):
         A.method(self)
