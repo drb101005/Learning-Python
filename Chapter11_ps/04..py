@@ -1,5 +1,5 @@
-# Write a class 'Complex' to represent complex numbers, along with overloaded operators '+' and '*' which adds 
-#and multiples them
+# Write a class 'Complex' to represent complex numbers, along with overloaded operators '+'  which adds them
+
 
 class complex:
     def __init__(self, r, i, x):
