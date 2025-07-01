@@ -95,4 +95,10 @@ create_btn('⌫', 5, 2, backspace, bg="#607d8b", colspan=2)
 for i in range(6):
     root.rowconfigure(i, weight=1)
 for j in range(4):
-    root.columnconfi
+    root.columnconfigure(j, weight=1)
+
+# Bind keyboard input
+root.bind("<Key>", key_event)
+
+# Run the main loop
+root.mainloop()
