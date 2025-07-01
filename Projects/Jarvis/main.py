@@ -8,8 +8,6 @@ from gtts import gTTS
 import pygame
 import os
 
-# pip install pocketsphinx
-
 recognizer = sr.Recognizer()
 engine = pyttsx3.init() 
 newsapi = "<Your Key Here>"
