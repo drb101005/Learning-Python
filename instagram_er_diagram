@@ -1,0 +1,41 @@
+// Instagram ER Diagram
+digraph {
+	User [label=User shape=rectangle]
+	name [label=Name shape=ellipse]
+	dob [label=DOB shape=ellipse]
+	age [label=Age shape=ellipse style=dashed]
+	gender [label=Gender shape=ellipse]
+	address [label=Address shape=ellipse]
+	User -> name
+	User -> dob
+	User -> age
+	User -> gender
+	User -> address
+	Account [label=Instagram_Acc shape=rectangle]
+	User -> Account [label=Creates shape=diamond]
+	Post [label=Post shape=rectangle]
+	Account -> Post
+	like [label=Like shape=ellipse]
+	comment [label=Comment shape=ellipse]
+	share [label=Share shape=ellipse]
+	Post -> like
+	Post -> comment
+	Post -> share
+	Story [label=Story shape=rectangle]
+	Account -> Story
+	story_id [label=story_id shape=ellipse style=bold]
+	caption [label=Caption shape=ellipse]
+	media_url [label=media_url shape=ellipse]
+	created_at [label="created/expired at" shape=ellipse]
+	Story -> story_id
+	Story -> caption
+	Story -> media_url
+	Story -> created_at
+	Follow [label=Follow shape=rectangle]
+	Account -> Follow
+	Follow -> Account [label=follows constraint=true]
+	follow_id [label="Follow ID" shape=ellipse style=bold]
+	follow_time [label="Created at" shape=ellipse]
+	Follow -> follow_id
+	Follow -> follow_time
+}
